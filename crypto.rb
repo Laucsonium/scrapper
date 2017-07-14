@@ -16,7 +16,6 @@ def value_crypto()
 	page=Nokogiri::HTML(open(coin_market_url))
 	crypto_value=page.xpath("//td[5]/a")
 	crypto_value.each do |value|
-
 		puts value.text
 	end
 end 
